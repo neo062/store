@@ -537,6 +537,9 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
+.text-center {
+  text-align: center;
+}
 .uppercase {
   text-transform: uppercase;
 }
