@@ -8,11 +8,9 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Welcome to our store",
-            "image": "shopify:\/\/shop_images\/macbook-air-on-desk.jpg",
-            "text_alignment": "center",
-            "color_scheme": "background-1",
-            "link": ""
+            "text": "<p>Welcome to our store<\/p>",
+            "bg_color": "#d22d2d",
+            "text_color": "#000"
           }
         }
       },
