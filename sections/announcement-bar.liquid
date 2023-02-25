@@ -8,26 +8,6 @@
   {
     "name": "Announcement Bar",
     "max_blocks": 12,
-    "settings": [
-      {
-        "type": "select",
-        "id": "text_align",
-        "label": "Text alignment",
-        "options": [
-          {
-            "value": "text-left",
-            "label": "Text left"
-          }, {
-            "value": "text-center",
-            "label": "Text center"
-          }, {
-            "value": "text-right",
-            "label": "Text right"
-          }
-        ]
-      }
-
-    ],
     "blocks": [
       {
         "type": "announcement",
@@ -48,7 +28,24 @@
             "id": "text_color",
             "label": "Color",
             "default": "#000"
+          }, {
+            "type": "select",
+            "id": "text_align",
+            "label": "Text alignment",
+            "options": [
+              {
+                "value": "text-left",
+                "label": "Text left"
+              }, {
+                "value": "text-center",
+                "label": "Text center"
+              }, {
+                "value": "text-right",
+                "label": "Text right"
+              }
+            ]
           }
+
 
         ]
       }
