@@ -12,10 +12,19 @@
             "bg_color": "#d22d2d",
             "text_color": "#ffffff"
           }
+        },
+        "2e907dba-c9eb-4ea2-91d3-5fb9768abf6e": {
+          "type": "announcement",
+          "settings": {
+            "text": "<p>Hii There<\/p>",
+            "bg_color": "#2be4f0",
+            "text_color": "#ffffff"
+          }
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "announcement-bar-0",
+        "2e907dba-c9eb-4ea2-91d3-5fb9768abf6e"
       ],
       "settings": {
       }
