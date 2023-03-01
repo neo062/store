@@ -4,30 +4,19 @@
   "sections": {
     "announcement-bar": {
       "type": "announcement-bar",
-      "disabled": true,
       "blocks": {
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "<p>Welcome to our store<\/p>",
-            "bg_color": "#d22d2d",
-            "text_color": "#ffffff",
-            "text_align": "text-right"
-          }
-        },
-        "2e907dba-c9eb-4ea2-91d3-5fb9768abf6e": {
-          "type": "announcement",
-          "settings": {
-            "text": "<p>Hii There<\/p>",
-            "bg_color": "#2be4f0",
-            "text_color": "#ffffff",
-            "text_align": "text-center"
+            "text": "Welcome to our store",
+            "text_alignment": "center",
+            "color_scheme": "background-1",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "announcement-bar-0",
-        "2e907dba-c9eb-4ea2-91d3-5fb9768abf6e"
+        "announcement-bar-0"
       ],
       "settings": {
       }
@@ -35,12 +24,12 @@
     "header": {
       "type": "header",
       "settings": {
-        "color_scheme": "background-1",
         "logo_position": "middle-left",
         "menu": "main-menu",
         "menu_type_desktop": "dropdown",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
+        "color_scheme": "background-1",
         "mobile_logo_position": "center",
         "margin_bottom": 0,
         "padding_top": 20,

@@ -4,7 +4,6 @@
   "sections": {
     "footer": {
       "type": "footer",
-      "disabled": true,
       "blocks": {
         "footer-0": {
           "type": "link_list",
@@ -37,10 +36,9 @@
         "color_scheme": "background-1",
         "newsletter_enable": true,
         "newsletter_heading": "Subscribe to our emails",
-        "enable_follow_on_shop": false,
         "show_social": true,
-        "enable_country_selector": true,
-        "enable_language_selector": true,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
         "payment_enable": true,
         "show_policy": false,
         "margin_top": 48,
