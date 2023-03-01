@@ -10,8 +10,6 @@
       rel="preconnect"
       href="https://cdn.shopify.com"
       crossorigin>
-    <link rel="stylesheet" href="{{ 'app.css' | asset_url }}">
-
 
     {%- if settings.favicon != blank -%}
       <link
@@ -46,8 +44,6 @@
     <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
-    <script src="{{ 'app.js' | asset_url }}"></script>
-
     {{ content_for_header }}
 
     {%- liquid
@@ -375,7 +371,7 @@
 
       html {
         box-sizing: border-box;
-
+        font-size: calc(var(--font-body-scale) * 62.5%);
         height: 100%;
       }
 
@@ -385,16 +381,22 @@
         grid-template-columns: 100%;
         min-height: 100%;
         margin: 0;
-        font-size: 1rem;
+        font-size: 1.5rem;
         letter-spacing: 0.06rem;
         line-height: calc(1 + 0.8 / var(--font-body-scale));
         font-family: var(--font-body-family);
         font-style: var(--font-body-style);
         font-weight: var(--font-body-weight);
       }
+
+      @media screen and (min-width: 750px) {
+        body {
+          font-size: 1.6rem;
+        }
+      }
     {% endstyle %}
 
-    {% comment %} {{ 'base.css' | asset_url | stylesheet_tag }} {% endcomment %}
+    {{ 'base.css' | asset_url | stylesheet_tag }}
 
     {%- unless settings.type_body_font.system? -%}
       <link
@@ -430,8 +432,8 @@
   </head>
 
   <body class="gradient">
-
-    <a class="skip-to-content-link button  sr-only" href="#MainContent">
+    {{ shop.name }}
+    <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
     </a>
 
