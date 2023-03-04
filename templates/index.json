@@ -1,12 +1,12 @@
 {
   "sections": {
-    "home-page": {
-      "type": "home-page",
+    "home-animation": {
+      "type": "hero-animation",
       "settings": {
       }
     }
   },
   "order": [
-    "home-page"
+    "home-animation"
   ]
 }
