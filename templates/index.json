@@ -1,7 +1,7 @@
 {
   "sections": {
     "home-page": {
-      "type": "home-page",
+      "type": "hero-animation",
       "settings": {
       }
     }
