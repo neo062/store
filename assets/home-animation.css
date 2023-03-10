@@ -238,7 +238,7 @@ body {
 }
 
 .home-container{
-  height: 41vw;
+  height: 530px;
   display: flex;
   flex-direction: row;
   background-image: linear-gradient(#E6E3E1, #F8F0E8);
