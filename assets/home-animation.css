@@ -375,7 +375,7 @@ background-image: linear-gradient(#F8F0E8, #FFFBF5);
 .heng-pro-img{
 height: 100%;
 width:100%;
-object-fit: cover;
+object-fit: contain;
 position: absolute;
 top: 0px;
 bottom: 0px;
