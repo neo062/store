@@ -408,10 +408,11 @@ cursor: pointer;
 }
 
 .explore1 {
-position: absolute;
-top: 28rem;
-left: 20rem;
+  position: absolute;
+  top: 22vw;
+  left: 16%;
 }
+
 .explore2{
 position: absolute;
 right: 29.5rem;
