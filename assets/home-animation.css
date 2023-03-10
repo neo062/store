@@ -414,15 +414,14 @@ cursor: pointer;
 }
 
 .explore2{
-position: absolute;
-right: 29.5rem;
-top: 59.5rem;
+  position: absolute;
+  right: 25.5%;
+  top: 46.5vw;
 }
 .explore3{
-position: absolute;
-bottom: 10.5rem;
- left: 20rem
-
+  position: absolute;
+  bottom: 9vw;
+  left: 16%;
 }
 
 .line-of-products{
