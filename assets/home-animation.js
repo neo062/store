@@ -3,10 +3,10 @@
 /** @format */
 
 const lineImage = [
-  { img: "../assets/line-product1.jpg" },
-  { img: "../assets/line-product2.jpg" },
-  { img: "../assets/line-product3.jpg" },
-  { img: "../assets/line-product4.jpg" }
+  { img: "https://cdn.shopify.com/s/files/1/0726/0857/9899/files/line-product1.jpg?v=1678432672" },
+  { img: "https://cdn.shopify.com/s/files/1/0726/0857/9899/files/line-product3.jpg?v=1678432701" },
+  { img: "https://cdn.shopify.com/s/files/1/0726/0857/9899/files/line-product4.jpg?v=1678432701" },
+  { img: "https://cdn.shopify.com/s/files/1/0726/0857/9899/files/line-product2.jpg?v=1678432701" }
 ]
 
 
