@@ -373,7 +373,9 @@ flex-direction: column;
 background-image: linear-gradient(#F8F0E8, #FFFBF5);
 }
 .heng-pro-img{
-height: auto;
+height: 100%;
+width:100%;
+object-fit: cover;
 position: absolute;
 top: 0px;
 bottom: 0px;
