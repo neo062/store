@@ -14,10 +14,13 @@
                  {{ section.settings.subtext_title }} </p>
                 
              {% endif %} 
-                   
+                
+             {% if section.settings.price %}
+             <p class="title3-price">{{ section.settings.price | money  }}</p>
+ 
+             {% endif %}
               
-                 <p class="title3-price">29.900€</p>
-                  <div class="reserve-item">
+                                 <div class="reserve-item">
                        <button class="reserve-btn">Reserve now</button>
                    </div>
           </div>
@@ -54,6 +57,12 @@
         "id":"subtext_title",
         "default": "This beautiful USB powered lamp designed    with a unique magnetic sphere switch. Use it as a calming night light for kids or adults!",
         "label": "Hero section subheading"
+      },
+      {
+        "type": "text",
+        "id":"price",
+        "default":"29000",
+        "label": "hero-section-product-price"
       }
     ]   
   }
