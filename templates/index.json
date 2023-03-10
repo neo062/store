@@ -20,6 +20,11 @@
       "settings": {
       }
     },
+    "explore-product": {
+      "type": "explore-product",
+      "settings": {
+      }
+    },
     "gallery-section": {
       "type": "gallery-section",
       "settings": {
@@ -36,6 +41,7 @@
     "video-section-heading",
     "video-section",
     "home-animation",
+    "explore-product",
     "gallery-section",
     "home-productgallery"
   ]
