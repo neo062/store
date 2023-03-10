@@ -5,6 +5,11 @@
       "settings": {
       }
     },
+    "video-section-heading": {
+      "type": "video-section-heading",
+      "settings": {
+      }
+    },
     "video-section": {
       "type": "video-section",
       "settings": {
@@ -28,6 +33,7 @@
   },
   "order": [
     "hero-animation",
+    "video-section-heading",
     "video-section",
     "home-animation",
     "gallery-section",
