@@ -1,4 +1,8 @@
 /** @format */
+/* For Making sun over navbar */
+.header-wrapper{
+  display: inline !important;
+}
 * {
   margin: 0;
   padding: 0;
@@ -12,11 +16,11 @@ body {
   text-align: center;
 }
 .navbar{
-  z-index: 3 !important;
+  z-index: 10 !important;
 }
 .nav-background{
   display: block !important;
-  background-image: url(./images/nav-background.svg);
+  background-image: url('https://cdn.shopify.com/s/files/1/0726/0857/9899/files/nav-background.png?v=1678434686');
   position: absolute;
   top: -200px;
   right: 0px;
@@ -41,6 +45,7 @@ body {
  cursor: pointer;
 }
 .sun-space{
+  background-image: linear-gradient(#E6E3E1, #F8F0E8);
   position: relative;
   height: 100%;
   width: 100%;
@@ -205,15 +210,15 @@ body {
     color:#fff;
 }
 .gallery-text1{
-  font-size: 1em;
+  font-size: 2rem;
   line-height: 1.2em;
-  padding-right: 3em;
+  padding-right: 3rem;
   font-weight: 600;
   color:#fff;
 }
 .gallery-anchor{
-  font-size: 1em;
-  line-height: 1em;
+  font-size: 1.3rem;
+  line-height: 1rem;
   font-weight: 600;
   color:#fff;
   border-bottom: 1px solid #fff;
@@ -238,6 +243,8 @@ body {
 }
 
 .home-container{
+  position: relative;
+  top:-84px;
   height: 530px;
   display: flex;
   flex-direction: row;
@@ -245,11 +252,11 @@ body {
 }
 .home-item1{
 width: 30%;
-margin-top: 4%;
+margin-top: 10%;
 display: flex;
 flex-direction: column;
 align-items: self-start;
-margin-left:6.3rem;
+margin-left:10%;
 
 }
 .home-img1-item{
@@ -259,15 +266,16 @@ margin-left:6.3rem;
   z-index: 2;
 }
 .home-img1{
+  position: relative;
+  top:84px;
 height: 460px;
-
 }
 .home-img2{
   object-fit: cover;
   width: 60%;
   height: 2.3rem;
   margin-left: 5rem;
-  margin-top: 0.5%;
+  margin-top: 12.8%;
   }
 .title1{
   font-size: 6.01rem;

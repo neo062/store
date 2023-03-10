@@ -3,23 +3,45 @@
     <div class="home-section home-section-1">
       <div class="gallery-item-media-gradient"></div>
       <div class="gallery-txt-container">
-        <p class="gallery-text gt">Red dot Award-Winning Design</p>
-        <p class="gallery-header gt">A touch of zen home décor wherever you need some gentle lighting.</p>
+        {% if section.settings.title1 %}
+        {% assign title1 = section.settings.title1 %}
+        <p class="gallery-text gt"> {{ title1 }}</p>  
+        {% endif %}
+        {% if section.settings.sub_title1 %}
+          {% assign sub_title1 = section.settings.sub_title1 %}
+          <p class="gallery-header gt">{{ sub_title1 }}</p>
+        {% endif %}
+        
       </div>
     </div>
     <div class="home-section home-section-2">
       <div class="gallery-item-media-gradient"></div>
       <div class="gallery-txt-container">
-        <p class="gallery-header gt">Fun Gift for Men and Women</p>
-        <p class="gallery-text1 gt">If you’re looking for a unique gift for your loved one, Heng Balance Lamp is the perfect option. If your girlfriend is an art lover or if your dad hopes for a classy Father’s Day gift for the office, this lamp is sure to brighten anyone’s day.</p>
+        {% if section.settings.title2 %}
+
+          {% assign title2 = section.settings.title2 %}
+          <p class="gallery-header gt">{{ title2 }}</p>
+        {% endif %}
+        {% if section.settings.sub_title2 %}
+          {% assign sub_title2 = section.settings.sub_title2 %}
+          <p class="gallery-text1 gt">{{ sub_title2 }}</p>
+        
+        {% endif %}
         <span class="gallery-anchor gt">Learn more</p>
       </div>
     </div>
     <div class="home-section home-section-3">
       <div class="gallery-item-media-gradient"></div>
       <div class="gallery-txt-container">
-        <p class="gallery-header gt">Sophisticated Minimalist Lighting</p>
-        <p class="gallery-text1 gt">Whether you place this small lamp in your home or on your work desk, this lighting adds a sophisticated and polished look to any space.</p>
+        {% if section.settings.title3 %}
+          {% assign title3 = section.settings.title3 %}
+          <p class="gallery-header gt">{{ title3 }}</p>
+        {% endif %}
+        {% if section.settings.sub_title3 %}
+          {% assign sub_title3 = section.settings.sub_title3 %}
+          <p class="gallery-text1 gt">{{ sub_title3 }}</p>
+        
+        {% endif %}
         <span class="gallery-anchor gt">Learn more</p>
       </div>
     </div>
@@ -39,3 +61,46 @@
     </div>
   </div>
 </div>
+{% schema %}
+  {
+    "name":"Gallery section text",
+    "settings":[
+      {
+        "type":"text",
+        "id": "title1",
+        "default": "Red dot Award-Winning Design",
+        "label":"Gallery section title1"
+      },
+      {
+        "type":"text",
+        "id":"sub_title1",
+        "default":"A touch of zen home décor wherever you need some gentle lighting.",
+        "label":"Gallery section subtitle1"
+      },
+      {
+        "type":"text",
+        "id": "title2",
+        "default": "Fun Gift for Men and Women",
+        "label":"Gallery section title2"
+      },
+      {
+        "type":"text",
+        "id":"sub_title2",
+        "default":"If you’re looking for a unique gift for your loved one, Heng Balance Lamp is the perfect option. If your girlfriend is an art lover or if your dad hopes for a classy Father’s Day gift for the office, this lamp is sure to brighten anyone’s day.",
+        "label":"Gallery section subtitle2"
+      },
+      {
+        "type":"text",
+        "id": "title3",
+        "default": "Sophisticated Minimalist Lighting",
+        "label":"Gallery section title3"
+      },
+      {
+        "type":"text",
+        "id":"sub_title3",
+        "default":"Whether you place this small lamp in your home or on your work desk, this lighting adds a sophisticated and polished look to any space.",
+        "label":"Gallery section subtitle3"
+      }
+    ]
+  }
+{% endschema %}
