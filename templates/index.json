@@ -1,12 +1,36 @@
 {
   "sections": {
-    "home-animation": {
+    "hero-animation": {
       "type": "hero-animation",
+      "settings": {
+      }
+    },
+    "video-section": {
+      "type": "video-section",
+      "settings": {
+      }
+    },
+    "home-animation": {
+      "type": "home-animation",
+      "settings": {
+      }
+    },
+    "gallery-section": {
+      "type": "gallery-section",
+      "settings": {
+      }
+    },
+    "home-productgallery": {
+      "type": "home-productgallery",
       "settings": {
       }
     }
   },
   "order": [
-    "home-animation"
+    "hero-animation",
+    "video-section",
+    "home-animation",
+    "gallery-section",
+    "home-productgallery"
   ]
 }

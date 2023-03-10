@@ -1,15 +1,19 @@
+
+
 /** @format */
+
 const lineImage = [
-  { img: "line-product1.jpg" | asset_url },
-  { img: "line-product2.jpg" | asset_url },
-  { img: "line-product3.jpg" | asset_url },
-  { img: "line-product4.jpg" | asset_url }
+  { img: "../assets/line-product1.jpg" },
+  { img: "../assets/line-product2.jpg" },
+  { img: "../assets/line-product3.jpg" },
+  { img: "../assets/line-product4.jpg" }
 ]
+
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.to(".home-sun", {
   scrollTrigger: {
-    trigger: ".navbar",
+    trigger: ".home-container",
     start: "top top",
     endTrigger: ".life-time-wrapper",
     end: "bottom bottom",
@@ -17,14 +21,14 @@ gsap.to(".home-sun", {
     scrub: true,
   },
   x: window.innerWidth - 500,
-  y: document.querySelector(".sun-space").offsetWidth - 400,
+  y: document.querySelector(".home-container").offsetWidth - 400,
   scale: 2.5,
   opacity: 0.7,
   duration: 5
 })
 gsap.to(".home-right-box", {
   scrollTrigger: {
-    trigger: ".navbar",
+    trigger: ".home-container",
     start: "top top",
     toggleActions: "restart none reverse reset",
     scrub: true,
@@ -34,7 +38,7 @@ gsap.to(".home-right-box", {
 })
 gsap.to(".home-img1-item", {
   scrollTrigger: {
-    trigger: ".navbar",
+    trigger: ".home-container",
     start: "top top",
     toggleActions: "restart none reverse reset",
     scrub: true,
@@ -44,7 +48,7 @@ gsap.to(".home-img1-item", {
 })
 const tl = gsap.timeline({
   scrollTrigger: {
-    trigger: ".navbar",
+    trigger: ".home-container",
     start: "top top",
     end: "bottom top",
     scrub: true
@@ -113,7 +117,7 @@ gsap.utils.toArray(".home-section").forEach((container, i) => {
 var lineOfPdts = document.getElementById("home-line-pdts")
 lineOfPdts.innerHTML = lineImage.map(item => {
   return `<div class="line-img-item">
-            <img src=${item.img} class="line-img"/>
+            <img src='${item.img}' class="line-img"/>
           </div>`
 }).join('')
 

@@ -15,11 +15,12 @@ body {
   z-index: 3 !important;
 }
 .nav-background{
+  display: block !important;
   background-image: url(./images/nav-background.svg);
   position: absolute;
   top: -200px;
   right: 0px;
-  height: 300px;
+  height: 200px;
   width: 100vw;
 }
 .nav-container{
@@ -45,26 +46,27 @@ body {
   width: 100%;
 }
 .home-sun{
+  display: block !important;
   height: 420px;
   width: 320px;
   position: absolute;
-  top: -200px;
+  top: -260px;
   left: -3em;
   z-index: 1;
   background-image: radial-gradient(circle closest-side at 50% 50%, #fff6de 7%, #ffde89 65%, rgba(255, 252, 247, 0));
 }
 .home-right-box{
   position: absolute;
+  display: block !important;
   right: -0.5em;
-  top: 3em;
-  width: 36em;
-  height: 45vh;
-  max-height: 39em;
-  min-height: 28em;
+  width: 36vw;
+  height: 30vw;
+  max-height: 39vw;
+  min-height: 28vw;
   margin-bottom: 18%;
   background-image: linear-gradient(141deg, #fff9f4 21%, #d1cbcb);
   transform: translate3d(0%, 0px, 0px) scale3d(1, 1, 1) rotateX(5deg) rotateY(-15deg) rotateZ(0deg) skew(0deg, 0deg);
-  z-index: 1;
+  z-index: 1 !important;
 }
 .nav-links-wrapper{
   margin-left: 3%;
@@ -154,17 +156,17 @@ body {
   position: relative;
 }
 .home-section-1 {
-  background-image: url(./assets/home_card1.jpg);
+  background-image: url("./home_card1.jpg");
 }
 
 .home-section-2 {
-  background-image: url(./assets/home_card2.jpg);
+  background-image: url("./home_card2.jpg");
 }
 .home-section-3 {
-  background-image: url(./assets/home_card3.jpg);
+  background-image: url("./home_card3.jpg");
 }
 .home-section-4 {
-  background-image: url(./assets/home_card4.jpg);
+  background-image: url("./home_card4.jpg");
   position: static !important;
   transform: translate(0px, 0px) !important;
 }
@@ -236,41 +238,46 @@ body {
 }
 
 .home-container{
+  height: 41vw;
   display: flex;
   flex-direction: row;
   background-image: linear-gradient(#E6E3E1, #F8F0E8);
 }
 .home-item1{
 width: 30%;
+margin-top: 4%;
 display: flex;
 flex-direction: column;
 align-items: self-start;
-margin-left:6.3em;
+margin-left:6.3rem;
 
 }
 .home-img1-item{
   width: 70%;
   margin-top: -3em;
-  padding-right: 16%;
+  padding-left: 10%;
   z-index: 2;
 }
 .home-img1{
-height: 30em;
+height: 36vw;
+
 }
 .home-img2{
-  height: 2.3em;
-  margin-left: 5em;
-  margin-top: -3px;
+  object-fit: cover;
+  width: 60%;
+  height: 2.3rem;
+  margin-left: 5rem;
+  margin-top: 0.5%;
   }
 .title1{
-font-size: 4.01em;
-line-height: 1.1;
-font-weight: 600;
-text-align: start;
+  font-size: 6.01rem;
+  line-height: 1.1;
+  font-weight: 600;
+  text-align: start;
 }
 .title2-text{
 text-align: start;
-font-size: 1.6em;
+font-size: 2.5em;
 line-height: 1.2em;
 font-weight: 400;
 margin-bottom: 0.5em !important;
@@ -278,7 +285,7 @@ margin-bottom: 0.5em !important;
 .title3-price{
 color: #747474;
 text-align: start;
-font-size: 1.6rem;
+font-size: 2.5rem;
 line-height: 1.2em;
 font-weight: 400;
 padding-right: 6em;
@@ -290,7 +297,7 @@ border: 0.15em solid #272531;
 border-radius: 999em;
 background-color: #272531;
 color: #ffde89;
-font-size: 1.1em;
+font-size: 2rem;
 line-height: 1.1em;
 font-weight: 600;
 text-align: center;
@@ -298,44 +305,55 @@ text-decoration: none;
 cursor: pointer;
 }
 .power-text1{
-font-size: 2.21em;
-line-height: 1.2em;
-font-weight: 600;
-z-index: 2;
+  font-size: 4.21em;
+  line-height: 1.2em;
+  font-weight: 600;
+  z-index: 2;
+  text-align: center;
 }
+
 .power-text2{
-margin-bottom: 0px;
-font-size: 5.9rem;
-line-height: 1.0;
-font-weight: 600;
-z-index: 2;
+  text-align: center;
+  
+  font-size: 9rem;
+  line-height: 1.0;
+  font-weight: 600;
+  z-index: 2;
 }
 .power-text3{
-font-size: 2.19em;
-line-height: 1.2em; 
-text-align: center;
-padding-left: 7em;
-padding-right: 7em;
-margin-top: 0.5em;
-z-index: 2;
+  width: 60%;
+  margin:auto;
+  font-size: 3.19rem;
+  line-height: 1.2em;
+  text-align: center;
+  margin-top: 0.5em;
+  z-index: 2;
 }
 .power-text4{
-color: #747474; 
-margin-bottom: 2.5em;
-z-index: 2;
+  text-align: center;
+  color: #747474;
+  margin-bottom: 2.5rem;
+  margin-top:1%;
+  z-index: 2;
+  font-size: 1.8rem;
+}
+
+.reserve-btn1-container{
+  display: flex;
+  justify-content: center;
 }
 .reserve-btn1{
-background-color: transparent;
+  background-color: transparent;
   font-family: Manrope, sans-serif;
   color: #272531;
   margin-bottom: 0px;
   padding: 0.8em 1.45em;
   border: 0.15em solid #272531;
   border-radius: 999em;
-  font-size: 1.1em;
+  font-size: 1.6rem;
   line-height: 1.1em;
   font-weight: 600;
-  text-align: center;
+  /* text-align: center; */
   text-decoration: none;
   cursor: pointer;
   z-index: 2;
@@ -355,7 +373,7 @@ flex-direction: column;
 background-image: linear-gradient(#F8F0E8, #FFFBF5);
 }
 .heng-pro-img{
-height: 70em;
+height: auto;
 position: absolute;
 top: 0px;
 bottom: 0px;
@@ -369,7 +387,7 @@ margin-bottom: 5em;
 }
 .pro-lamp-wrapper{
 position: relative;
-height: 70em;
+height: 115rem;
 margin-bottom: 5em;
 }
 .explore-btn{
@@ -389,18 +407,18 @@ cursor: pointer;
 
 .explore1 {
 position: absolute;
-top: 15em;
-left: 10em;
+top: 28rem;
+left: 20rem;
 }
 .explore2{
 position: absolute;
-right: 17.5em;
-top: 32.5em;
+right: 29.5rem;
+top: 59.5rem;
 }
 .explore3{
 position: absolute;
-bottom: 5.5em;
- left: 10em
+bottom: 10.5rem;
+ left: 20rem
 
 }
 
@@ -469,6 +487,9 @@ margin: 1.5em 4em;
   right: 0px;
 }
 .play-button{
+  display: flex;
+    align-items: center;
+    justify-content: center;
   z-index: 1;
   position: absolute;
   color: #160042;
@@ -657,7 +678,7 @@ width: 50%;
 }
 .hoverpen1 .animation-block .description-wrapper {
   height: auto;
-  margin-top: 1em;
+  margin-top: 1rem;
 }
 @media (max-width: 1080px) {
   .hoverpen1 .animation-block .description-wrapper {
@@ -859,7 +880,7 @@ width: 50%;
 .hoverpen2 .animation-block .description-wrapper {
   height: auto;
   position: absolute;
-  top: 10em !important;
+  top: 20rem !important;
   left: 0em !important;
   text-align: start;
   margin-top: 1em;
@@ -1062,7 +1083,7 @@ width: 50%;
 }
 .hoverpen3 .animation-block .description-wrapper {
   height: auto;
-  top: 14em !important;
+  top: 24em !important;
   left: 1em !important;
   position: absolute;
 }
