@@ -5,9 +5,15 @@
    <div class="home-container">
    
         <div class="home-item1 parallax" data-depth="0.3">
-              <h1 class="title1">Lybra Balance</h1>
-                <p class=" title2-text">
+          {% if section.settings.title %}
+          <h1 class="title1">{{ section.settings.title }}</h1>
+          {% endif %}
+             {% if section.settings.subtext_title %}
+              
+             <p class=" title2-text">
                  {{ section.settings.subtext_title }} </p>
+                
+             {% endif %} 
                    
               
                  <p class="title3-price">29.900€</p>
