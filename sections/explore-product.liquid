@@ -1,6 +1,6 @@
 <div class="pro-lamp-wrapper">
-  {% if section.settings.explore-image %}
-    <img src="{{ section.settings.image |img_url: 'master' }}" />
+  {% if section.settings.explore_image %}
+    <img src="{{ section.settings.explore_image |img_url: 'master' }}" />
   {% else %}
     <img src="https://cdn.shopify.com/s/files/1/0726/0857/9899/files/heng-pro-lamp.png?v=1678430593 " class="heng-pro-img" />
 
@@ -15,7 +15,7 @@
     "settings": [
       {
         "type": "image_picker",
-        "id": "explore-image",
+        "id": "explore_image",
         "label": "Heng image section"
       }
     ],
