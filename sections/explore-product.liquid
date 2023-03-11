@@ -1,19 +1,28 @@
 <div class="pro-lamp-wrapper">
-  <img src="https://cdn.shopify.com/s/files/1/0726/0857/9899/files/heng-pro-lamp.png?v=1678430593 " class="heng-pro-img" />
+  {% if section.settings.explore-image %}
+    <img src="{{ section.settings.image |img_url: 'master' }}" />
+  {% else %}
+    <img src="https://cdn.shopify.com/s/files/1/0726/0857/9899/files/heng-pro-lamp.png?v=1678430593 " class="heng-pro-img" />
+
+  {% endif %}
   <button class="explore1 explore-btn">EXPLORE</button>
   <button class="explore2 explore-btn">EXPLORE</button>
   <button class="explore3 explore-btn">EXPLORE</button>
 </div>
 {% schema %}
-    {
-        "name":"Hang lamp Image",
-        "settings":[
-
-        ],
-        "presets": [
-            {
-                "name": "Hang lamp Image"
-            }
-        ]
-    }
+  {
+    "name": "Hang lamp Image",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "explore-image",
+        "label": "Heng image section"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Hang lamp Image"
+      }
+    ]
+  }
 {% endschema %}
