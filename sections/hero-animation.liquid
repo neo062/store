@@ -1,65 +1,72 @@
-    <div class="sun-space">
-    <div class="home-sun"></div>
-    <div class="home-right-box"></div>
-    <div class="nav-background"></div>
-   <div class="home-container">
-   
-        <div class="home-item1 parallax" data-depth="0.3">
-          {% if section.settings.title %}
-          <h1 class="title1">{{ section.settings.title }}</h1>
-          {% endif %}
-             {% if section.settings.subtext_title %}
-              
-             <p class=" title2-text">
-                 {{ section.settings.subtext_title }} </p>
-                
-             {% endif %} 
-                
-             {% if section.settings.price %}
-             <p class="title3-price">{{ section.settings.price | money  }}</p>
- 
-             {% endif %}
-              
-             <div class="reserve-item">
-                       <button class="reserve-btn">Reserve now</button>
-                   </div>
-          </div>
-          <div class="home-img1-item parallax" data-depth="0.1">
-           
-            <img src={{ "zan-design-img.png" | asset_url }}  class="home-img1"/>
-           
-           
-            <img src={{"heng_shadow.svg" | asset_url}} class="home-img2"/>
-          </div>
+<div class="sun-space">
+  <div class="home-sun"></div>
+  <div class="home-right-box"></div>
+  <div class="nav-background"></div>
+  <div class="home-container">
+
+    <div class="home-item1 parallax" data-depth="0.3">
+      {% if section.settings.title %}
+        <h1 class="title1">{{ section.settings.title }}</h1>
+      {% endif %}
+      {% if section.settings.subtext_title %}
+
+        <p class=" title2-text">
+          {{ section.settings.subtext_title }}
+        </p>
+
+      {% endif %}
+
+      {% if section.settings.price %}
+        <p class="title3-price">{{ section.settings.price | money }}</p>
+
+      {% endif %}
+
+      <div class="reserve-item">
+        <button class="reserve-btn">Reserve now</button>
       </div>
-      
+    </div>
+    <div class="home-img1-item parallax" data-depth="0.1">
+      {% if section.settings.hero_section_image %}
+        <img src={{ section.settings.hero_section_image | image_url }} class="home-img1" />
+      {% else %}
+        <img src={{ "zan-design-img.png" | asset_url }} class="home-img1" />
+      {% endif %}
+
+
+
+      <img src={{"heng_shadow.svg" | asset_url}} class="home-img2" />
+    </div>
   </div>
-         
- {% schema %}
+
+</div>
+
+{% schema %}
   {
-    "name":"Hero Section Texts",
-    
-      "settings": [
-      {
-        "type":"text",
-        "id":"title",
-        "default":"Lybra Balance",
-        "label": "Hero section heading"
-      },
-      {
-        "type":"text",
-        "id":"subtext_title",
-        "default": "This beautiful USB powered lamp designed    with a unique magnetic sphere switch. Use it as a calming night light for kids or adults!",
-        "label": "Hero section subheading"
-      },
+    "name": "Hero Section Texts",
+
+    "settings": [
       {
         "type": "text",
-        "id":"price",
-        "default":"29000",
+        "id": "title",
+        "default": "Lybra Balance",
+        "label": "Hero section heading"
+      }, {
+        "type": "text",
+        "id": "subtext_title",
+        "default": "This beautiful USB powered lamp designed    with a unique magnetic sphere switch. Use it as a calming night light for kids or adults!",
+        "label": "Hero section subheading"
+      }, {
+        "type": "text",
+        "id": "price",
+        "default": "29000",
         "label": "hero-section-product-price"
+      }, {
+        "type": "image_picker",
+        "id": "hero_section_image",
+        "label": "Hero section image"
       }
-      
-      
-    ]   
+
+
+    ]
   }
- {% endschema %}
+{% endschema %}
